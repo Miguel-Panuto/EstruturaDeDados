@@ -7,28 +7,30 @@ namespace Pilha
 	{
 		static void Main(string[] args)
 		{
-			Stack myStacks = new Stack();
+			Stack myStacks = new Stack(); //Criação da pilha
 
-			while (true)
+			while (true) //Repetirá o loop até que a string seja nula ou em branco
 			{
-				string miguel = Console.ReadLine();
-				if (String.IsNullOrWhiteSpace(miguel))
+				string myString = Console.ReadLine(); //Pega o que foi escrito no console
+				if (String.IsNullOrWhiteSpace(myString))
+				{
 					break;
+				}
 
-				myStacks.Push(miguel);
+				myStacks.Push(myString); // Adiciona elementos na pilha
 
 				Console.Clear();
 			}
 
 			Console.Clear();
 
-			Console.WriteLine("\nNumero de elementos: " + myStacks.Count + "\n");
+			Console.WriteLine("\nNumero de elementos: " + myStacks.Count + "\n"); // Apenas para mostrar quantos elementos há na pilha
 
 			while (myStacks.Count > 0)
 			{
 				Console.WriteLine(myStacks.Pop());
 
-				//pop exclui os elementos da fila
+				//pop exclui os elementos da fila e retorna a string do último elemento adicionado
 
 			}
 
