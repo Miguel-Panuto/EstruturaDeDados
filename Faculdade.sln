@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fila", "Fila\Fila.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pilha", "Pilha\Pilha.csproj", "{F66ECC52-4EEE-4A76-8F52-AEFB142A9141}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arvore", "Arvore\Arvore.csproj", "{8C95B7CA-630C-4C09-A8D8-9B216F5BEFCC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arvore", "Arvore\Arvore.csproj", "{8C95B7CA-630C-4C09-A8D8-9B216F5BEFCC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

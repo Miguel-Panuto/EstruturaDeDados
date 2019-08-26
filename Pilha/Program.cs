@@ -1,10 +1,10 @@
-﻿/*Criado por: Gabriel Pasqualini e Victor Reis
+﻿/*Criado por: Gabriel Pasqualini, Victor Reis e Miguel
  * 
  * 18/08/2019 às 14:00
  */
 
 using System;
-using System.Collections;
+using Pilha;
 
 namespace Pilha
 {
@@ -12,7 +12,7 @@ namespace Pilha
 	{
 		static void Main(string[] args)
 		{
-			Stack myStacks = new Stack(); //Criação da pilha
+			Pilha myStacks = new Pilha(); //Criação da pilha
 			int n = 1; //cria a variavel de Id
 
 			while (true) //Repetirá o loop até que a string seja nula ou em branco
@@ -25,21 +25,22 @@ namespace Pilha
 					break;
 				}
 
-				myStacks.Push(new Livro(myString, n)); // Adiciona elementos na pilha
+				myStacks.Add(new Livro(myString, n)); // Adiciona elementos na pilha
 				n++;
 
-				Console.Clear();
+				//Console.Clear();
 			}
 
 			Console.Clear();
 
 			Console.WriteLine("\nQuantidade de livros na pilha: " + myStacks.Count + "\n"); // Apenas para mostrar quantos elementos há na pilha
 
-			while (myStacks.Count > 0)
+			while (!myStacks.IsEmpty())
 			{
 				Console.WriteLine(myStacks.Pop());
 
 				//Pop exclui os elementos da fila e retorna a string do último elemento adicionado
+				Console.ReadLine();
 
 			}
 

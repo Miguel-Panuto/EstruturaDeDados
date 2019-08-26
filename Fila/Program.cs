@@ -12,7 +12,7 @@ namespace Fila
 	{
 		static void Main(string[] args)
 		{
-			Queue q = new Queue(); //A fila em si
+			Fila q = new Fila(); //A fila em si
 
 			int n = 1; //O id que ficará em cada objeto
 
@@ -27,13 +27,12 @@ namespace Fila
 					break;
 				}
 
-				q.Enqueue(new Pessoa(s, n)); //Criação dos objetos
+				q.Add(new Pessoa(s, n)); //Criação dos objetos
 				n++;
 				Console.Clear();
 			}
-			q.TrimToSize(); //Comando para redimensionar a fila do tamanho exato de elementos
 			Console.Clear();
-			while (q.Count > 0) //Mostrará os elementos na tela
+			while (!q.IsEmpty()) //Mostrará os elementos na tela
 			{
 				Console.WriteLine(q.Dequeue() + " Vá ao próximo guiche"); //Irá retirar os elementos e printa na tela, ao mesmo tempo que tira da fila
 				Console.ReadLine(); //Espera pra apertar enter para voltar no loop
